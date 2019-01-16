@@ -4,8 +4,9 @@ title: Bear in Hat
 subtitle: Bears Look Great in Hats
 ---
 
-
-![Bear in hat]({{ '/img/bearinhatround.png' | absolute_url }}){: .center-image }
+<p class="text-center">
+![Bear in hat]({{ '/img/codebear.png' | absolute_url }})
+</p>
 
 Hello, hope you're having a great day.
 
