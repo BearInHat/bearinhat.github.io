@@ -1,12 +1,10 @@
 ---
 layout: page
 title: Bear in Hat
-subtitle: Bears Look Great in Hats
+subtitle: Even Bears can Code
 ---
 
-<p class="text-center">
-![Bear in hat]({{ '/img/codebear.png' | absolute_url }})
-</p>
+![Bear in hat]({{ '/img/codebear.png' | absolute_url }}){: .center-image }
 
 Hello, hope you're having a great day.
 

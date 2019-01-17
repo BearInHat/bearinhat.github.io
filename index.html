@@ -1,7 +1,7 @@
 ---
 layout: page
-title: My website
-subtitle: This is where I will tell my friends way too much about me
+title: Even Bears Can Code
+subtitle: Discovering new ways to do the same old thing.
 use-site-title: true
 ---
 
@@ -57,16 +57,16 @@ use-site-title: true
 </div>
 
 {% if paginator.total_pages > 1 %}
-<ul class="pager main-pager">
+<div class="d-flex justify-content-between pager main-pager">
   {% if paginator.previous_page %}
-  <li class="previous">
+  <div class="previous">
     <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-  </li>
+  </div>
   {% endif %}
   {% if paginator.next_page %}
-  <li class="next">
+  <div class="next">
     <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-  </li>
+  </div>
   {% endif %}
-</ul>
+</div>
 {% endif %}
