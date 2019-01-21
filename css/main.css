@@ -117,18 +117,29 @@ img {
   {% endif %}
 }
 
-.navbar-custom .nav li a {
+.navbar-custom .navbar-nav li a {
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 1px;
 }
 
 .navbar-custom .navbar-brand,
-.navbar-custom .nav li a {
+.navbar-custom .brand-link {
+  font-weight: 800;
+  color: {{ site.navbar-brand-col }};
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .brand-link:hover {
+  color: {{ site.navbar-brand-hover-col }};
+  text-decoration: none;
+}
+.navbar-custom .navbar-nav .nav-link {
   font-weight: 800;
   color: {{ site.navbar-text-col }};
 }
-
+.navbar-custom .navbar-nav .nav-link:hover {
+  color: {{ site.navbar-text-hover-col }};
+}
 .navbar-custom .navbar-brand-logo {
   padding-top: 0;
   -webkit-transition: padding .5s ease-in-out;
@@ -196,12 +207,17 @@ footer {
   {% endif %}
 }
 
-footer p.text-muted {
+footer p {
   color: {{ site.footer-text-col }};
 }
 
 footer a {
   color: {{site.footer-link-col}};
+}
+
+footer a:hover {
+  color: {{site.footer-link-hover-col}};
+  text-decoration: none;
 }
 
 footer .copyright {
@@ -225,6 +241,10 @@ footer .theme-by {
 
 /* --- Post preview --- */
 
+.posts-list hr {
+  border-width: 2px;
+}
+
 .post-preview {
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -232,7 +252,7 @@ footer .theme-by {
 
 @media only screen and (min-width: 768px) {
   .post-preview {
-    padding: 35px 0;
+    padding: 15px 0;
   }
 }
 
@@ -242,7 +262,7 @@ footer .theme-by {
 
 .post-preview a {
   text-decoration: none;
-  color: #404040;
+  color: {{ site.page-link-col }};
 }
 
 .post-preview a:focus,
@@ -278,17 +298,13 @@ footer .theme-by {
   width: 100%;
 }
 .post-image {
-  float: right;
-  height: 192px;
-  width: 192px;
-  margin-top: -35px;
   filter: grayscale(90%);
 }
 .post-image:hover {
   filter: grayscale(0%);
 }
 .post-image img {
-  border-radius: 100px;
+  border-radius: 50%;
   height: 192px;
   width: 192px;
 }
@@ -350,7 +366,7 @@ footer .theme-by {
 /* --- Post and page headers --- */
 
 .intro-header {
-  margin: 70px 0 30px;
+  margin: 50px 0 30px;
   position: relative;
 }
 .intro-header.big-img {

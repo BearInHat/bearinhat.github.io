@@ -38,14 +38,22 @@ avatar: "/img/bearinhatround.png"
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 
 navbar-col: "#F5F5F5"
-navbar-text-col: "#0085A1"
+navbar-brand-col: "#0085A1"
+navbar-brand-hover-col: "rgba(255,255,255,.5)"
+navbar-text-col: "rgba(255,255,255,.75)"
+navbar-text-hover-col: "rgba(255,255,255,.5)"
 navbar-children-col: "#F5F5F5"
 page-col: "#FFFFFF"
+page-link-col: "#343A40"
+page-link-hover-col: "#0085A1"
+page-title-link-col: "#343A40"
+page-title-link-hover-col: "#0085A1"
 link-col: "#008AFF"
 hover-col: "#0085A1"
 footer-col: "#F5F5F5"
-footer-text-col: "#777777"
+footer-text-col: "rgba(255,255,255,.75)"
 footer-link-col: "#0085A1"
+footer-link-hover-col: "rgba(255,255,255,.5)"
 
 # Alternatively, the navbar, footer, and page background can be set to use background images
 # instead of colour
