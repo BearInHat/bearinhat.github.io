@@ -10,7 +10,7 @@ The approach will be to cleanse the existing HTML in the rich text fields and pl
 
 Further more, to make their overall experience and transition into this new mindset of managing content as easy as possible, I'll try to make some good use of branches to help generate new content going forward.
 
-In the next few (many?) posts I'll start going into some code and examples of how this could be accomplished.
+In the next few (many?) posts I'll try getting into some code or examples as I try out some ideas.
 
 Stay tuned for more!
 
