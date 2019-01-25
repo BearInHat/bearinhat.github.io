@@ -30,3 +30,13 @@
     {% endif %}
   {% endfor %}
 {% endif %}
+
+{% if layout.common-inline-js %}
+  <script>
+    $(document).ready(() => {
+      {% for js in layout.common-inline-js %}
+        {{ js }}
+      {% endfor %}
+    });
+  </script>
+{% endif %}

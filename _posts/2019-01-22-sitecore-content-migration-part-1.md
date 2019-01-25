@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sitecore Content Migration, Part 1
-tags: [sitecore, helix]
+tags: [sitecore, helix, migration]
 ---
 
 Currently I'm working on a project to rewrite a rich text blob heavy Sitecore site in a Helix friendly fashion.  Along with this there's also a requirement to use lazy loading for images, videos, and other media content. It's also expected that page URLs will remane the same were possible, to avoid any hits to SEO.  This is going to be a bit of a challenge though, since they want to go to a single page format for media, even though it's currently in a multi page format.
@@ -15,3 +15,4 @@ In the next few (many?) posts I'll try getting into some code or examples as I t
 Stay tuned for more!
 
 -Ben
+
