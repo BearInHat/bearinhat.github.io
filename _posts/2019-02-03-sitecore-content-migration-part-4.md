@@ -43,6 +43,8 @@ With both options there is a bit of complication because the site structure is c
             // Get a path and make sure the directory exists.
             var fullPath = GetExportPath(mediaItem);
             EnsurePath(fullPath);
+            // Set final item path
+            fullPath = $"{fullPath}{mediaItem.Name}.item";
             // Serialize
             Manager.DumpItem(fullPath, mediaItem);
         }
